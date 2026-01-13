@@ -1,0 +1,35 @@
+* { box-sizing: border-box; will-change: transform, opacity; }
+
+body {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: cyan;
+}
+
+/* Ondas */
+.wave { position:absolute; width:120px; height:120px; border:2px solid cyan; border-radius:50%; animation:wave 2.8s infinite; }
+.wave.delay { animation-delay:1.4s; }
+
+/* Celular */
+#phone-container { position:relative; cursor:pointer; }
+.phone { width:180px; height:360px; border:4px solid cyan; border-radius:25px; z-index:2; backface-visibility:hidden; transform:translateZ(0); animation:phoneTransform 5s infinite; }
+.screen { width:100%; height:100%; border-radius:20px; background:linear-gradient(90deg, red, orange, yellow, green, blue, purple); background-size: 600% 600%; animation:glitch 1.2s infinite; }
+
+/* Menú */
+.menu { flex-direction: column; background: radial-gradient(circle,#000,#020024); text-align:center; }
+.menu h1 { font-size:48px; color:cyan; text-shadow:0 0 10px cyan,0 0 20px magenta; margin-bottom:40px; }
+.menu-box a { display:block; margin:20px; font-size:26px; color:cyan; text-decoration:none; text-shadow:0 0 5px cyan,0 0 15px magenta; transition:transform 0.2s; }
+.menu-box a:hover { transform:scale(1.1); }
+
+/* Neon "Volver" */
+.back-menu { display:inline-block; margin-top:30px; padding:10px 20px; color:cyan; border:2px solid cyan; border-radius:10px; text-decoration:none; text-shadow:0 0 5px cyan,0 0 10px magenta; transition:0.2s; }
+.back-menu:hover { transform:scale(1.1); }
+
+/* Pausa animaciones */
+.paused * { animation-play-state:paused !important; }
