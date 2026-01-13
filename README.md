@@ -1,2 +1,0 @@
-# tranzshockcelulares
-lab de celulares
