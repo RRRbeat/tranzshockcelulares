@@ -7,7 +7,7 @@
 </head>
 <body class="menu">
 
-  <h1>Eco Tech</h1>
+  <h1>ECO TECH</h1>
   <p>Aquí colocarás información sobre reparación de celulares.</p>
 
   <a class="back-menu" href="menu.html">Volver al menú</a>
@@ -15,3 +15,4 @@
 
 </body>
 </html>
+
